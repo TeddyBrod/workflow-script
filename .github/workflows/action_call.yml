@@ -13,7 +13,7 @@ jobs:
         uses:  TeddyBrod/Composite-action@main
         with:
           who-to-greet: "Fred"
-          duck: ${{ secrets.DUCK_TOKEN }}
+          duck_token: ${{ secrets.DUCK_TOKEN }}
           
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
