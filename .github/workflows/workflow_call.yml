@@ -3,7 +3,7 @@ name: Call workflow
 on:
   workflow_call:
    inputs:
-    duck_token:
+    DUCK_TOKEN:
      required: true
      type: string
      
@@ -19,7 +19,7 @@ jobs:
         uses:  TeddyBrod/Composite-action@main
         with:
           who-to-greet: "Fred"
-          duck_token: ${{ secrets.DUCK_TOKEN }}
+          duck_token: ${{ inputs.DUCK_TOKEN }}
   
       - uses: actions/checkout@v3
 
