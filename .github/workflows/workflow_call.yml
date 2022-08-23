@@ -2,10 +2,9 @@ name: Call workflow
 
 on:
   workflow_call:
-   inputs:
+   secrets:
     DUCK_TOKEN:
      required: true
-     type: string
      
   workflow_dispatch:
 
