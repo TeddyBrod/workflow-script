@@ -18,7 +18,7 @@ jobs:
         uses:  TeddyBrod/Composite-action@main
         with:
           who-to-greet: "Fred"
-          duck_token: ${{ inputs.DUCK_TOKEN }}
+          duck_token: ${{ secrets.DUCK_TOKEN }}
   
       - uses: actions/checkout@v3
 
