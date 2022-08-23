@@ -1,11 +1,7 @@
 name: Call workflow
 
 on:
-  workflow_call:
-   inputs:
-     name:
-      type: string
-      
+  workflow_call:     
   workflow_dispatch:
 
 jobs:
