@@ -1,11 +1,6 @@
 name: Call Action
 
 on:
-  workflow_call:
-   inputs:
-     name:
-      type: string
-      
   workflow_dispatch:
 
 jobs:
@@ -15,7 +10,7 @@ jobs:
       - id: foo
         uses:  TeddyBrod/Composite-action@main
         with:
-          who-to-greet: ${{ inputs.name }}
+          who-to-greet: "Fred"
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
       
